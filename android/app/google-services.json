@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "755787911663",
+    "project_id": "uzcomms",
+    "storage_bucket": "uzcomms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755787911663:android:cc2218681bd035c2aae61a",
+        "android_client_info": {
+          "package_name": "uzcomms.us.uzcomms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755787911663-enlm59umu4fgho99gbfap3eaj68th1ir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdpehalK5EPS8BREcDQIdyit3_aENtV00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755787911663-enlm59umu4fgho99gbfap3eaj68th1ir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
