@@ -4,7 +4,7 @@ import 'coursework.dart';
 import 'exams.dart';
 import 'notifications.dart';
 import 'map.dart';
-import 'lectures.dart';
+import 'lectures/lectures.dart';
 import 'timetables.dart';
 
 class CampusActivity extends StatefulWidget {

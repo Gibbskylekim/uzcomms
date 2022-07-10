@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:uzcomms/login/addpost.dart';
-import 'package:uzcomms/login/editposts.dart';
+import 'package:uzcomms/campus_activity/lectures/addpost.dart';
+import 'package:uzcomms/campus_activity/lectures/editposts.dart';
 class Posts extends StatefulWidget {
   const Posts({Key? key}) : super(key: key);
 

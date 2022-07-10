@@ -6,7 +6,7 @@ import 'package:uzcomms/login/model.dart';
 import 'package:uzcomms/login/studentsList.dart';
 
 import 'hom.dart';
-import 'posts.dart';
+import '../campus_activity/lectures/posts.dart';
 
 class Teacher extends StatefulWidget {
   String id;
