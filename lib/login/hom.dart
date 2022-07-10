@@ -36,6 +36,7 @@ class _ControlStateState extends State<ControlState> {
   var email;
   var id;
   @override
+
   void initState(){
     super.initState();
     FirebaseFirestore.instance
