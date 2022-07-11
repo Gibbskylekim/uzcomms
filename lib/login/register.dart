@@ -124,11 +124,11 @@ class _RegisterState extends State<Register> {
                             if (value!.length == 0) {
                               return 'Email cannot be empty';
                             }
-                            if (!RegExp(
-                                "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[A-Z]")
-                                .hasMatch(value)) {
-                              return 'Please enter a valid email';
-                            }
+                            // if (!RegExp(
+                            //     "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[A-Z]")
+                            //     .hasMatch(value)) {
+                            //   return 'Please enter a valid email';
+                            // }
                             else {
                               return null;
                             }
@@ -262,12 +262,12 @@ class _RegisterState extends State<Register> {
                               ),
                               elevation: 5.0,
                               height: 40,
-                              onPressed: (){
+                              onPressed: () async {
                                 setState((){
                                   showProgress = true;
                                 }
                                 );
-                                signUp(emailController.text, passwordController.text, rool);
+                                await signUp(emailController.text, passwordController.text, rool);
                               },
                               child: const Text('Register',
                                 style: TextStyle(
@@ -292,7 +292,7 @@ class _RegisterState extends State<Register> {
       ),
     );
   }
-  void signUp(String email, String password, String rool) async {
+  Future<void> signUp(String email, String password, String rool) async {
     const CircularProgressIndicator();
     if (_formkey.currentState!.validate()){
       await _auth

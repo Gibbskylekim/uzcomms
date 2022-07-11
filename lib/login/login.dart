@@ -225,11 +225,11 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                               elevation: 5.0,
                               height: 40,
-                              onPressed: () {
+                              onPressed: () async {
                                 setState(() {
                                   visible = true;
                                 });
-                                signIn(
+                                await signIn(
                                     emailController.text, passwordController.text);
                               },
                               child: const Text(
@@ -315,7 +315,7 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  void signIn(String email, String password) async {
+  signIn(String email, String password) async {
     if (_formkey.currentState!.validate()) {
       try {
         UserCredential userCredential =
